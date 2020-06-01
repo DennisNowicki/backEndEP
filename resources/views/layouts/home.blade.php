@@ -34,18 +34,18 @@
         <div class="navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a [routerLink]="['home']" class="nav-link _nav-item">Home</a>
+                  <a class="nav-link _nav-item">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a [routerLink]="['builder']" class="nav-link _nav-item">Builder</a>
+                  <a class="nav-link _nav-item">Builder</a>
                 </li>
-                <li class="nav-item" *ngIf="authService.isLoggedIn">
-                  <a [routerLink]="['adminPanel']" class="nav-link _nav-item">Admin panel</a>
+                <li class="nav-item">
+                  <a class="nav-link _nav-item">Admin panel</a>
                 </li>
             </ul>
             <div class="my-2 my-md-0">
-              <button class="btn btn-outline-primary" *ngIf="!authService.isLoggedIn" routerLink="login">Login</button>
-              <button class="btn btn-outline-warning" *ngIf="authService.isLoggedIn" (click)="authService.logout()">Logout</button>
+              <button class="btn btn-outline-primary">Login</button>
+              <button class="btn btn-outline-warning">Logout</button>
           </div>
         </div>
     </div>
@@ -165,7 +165,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <label>Name</label>
-                            <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                            <div class="input-group">
                                 <div class="input-group-prepend">
                                   <span class="input-group-text"><i class="nc-icon nc-single-02"></i></span>
                                 </div>
@@ -174,7 +174,7 @@
                         </div>
                         <div class="col-md-6">
                             <label>Email</label>
-                            <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                            <div class="input-group">
                                 <div class="input-group-prepend">
                                   <span class="input-group-text">  <i class="nc-icon nc-email-85"></i></span>
                                 </div>
