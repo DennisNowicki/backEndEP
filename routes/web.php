@@ -25,4 +25,4 @@ Route::get('/home', function () {
     return view('layouts.home');
 });
 
-
+Route::get('/builder', 'BuilderController@show');
