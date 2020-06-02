@@ -25,4 +25,6 @@ Route::get('/home', function () {
     return view('layouts.home');
 });
 
+Route::get('/application', 'ApplicationController@show');
+
 Route::get('/builder', 'BuilderController@show');
